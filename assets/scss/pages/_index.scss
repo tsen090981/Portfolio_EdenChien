@@ -1,0 +1,558 @@
+section.kv{
+  height: 100vh;
+  position: relative;
+  background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/bg1.jpg?raw=true);
+  background-size: cover;
+  background-position: center center;
+  padding: 300px 0px 0px 0px;
+  .container{
+      height: 100%;
+      .deco2{
+          position: absolute;
+          bottom: 0;
+      }
+  }
+  h1{
+      position: relative;
+      left: -7px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 150px;
+      color: $color_main_l;
+      margin-bottom: 24px;
+      word-wrap: break-word;
+  }
+  h5{
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      color: $color_main_l;
+      letter-spacing: 14px;
+      margin-bottom: 100px;
+      word-wrap: break-word;
+  }
+  .text{
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+      letter-spacing: 5px;
+      z-index: 1;
+      padding-left: 4px;
+  }
+  .text1{
+      margin-bottom: 84px;
+  }
+  .text2{
+      padding-bottom: 36px;
+  }
+  .deco_block{
+      position: absolute;
+      bottom: 0px;
+      width: 16px;
+      height: 96px;
+      background-color: $color_sub;
+  }
+  .deco_line{
+      position: absolute;
+      bottom: 64px;
+      left: 8px;
+      width: 1px;
+      height: 76px;
+      background-color: $color_main_m;
+  }
+}
+section.about{
+  position: relative;
+  padding: 100px 0px 55px 0px;
+  background-color: $color_main_s;
+  &::after{
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 120px;
+      background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/about_bg_deco.png?raw=true);
+      background-size: cover;
+      background-position: center center;
+  }
+  .person{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 25%;
+      z-index: 10;
+  }
+  .content{
+      position: relative;
+      max-width: 75%;
+      padding: 40px 48px;
+      background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/about_bg.png?raw=true);
+      background-size: cover;
+      
+      .title{
+          position: relative;
+          font-size: 90px;
+          align-items: center;
+          margin: 0px auto 24px auto;
+          h2{
+              margin-right: 8px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 600;
+              color: $color_sub;
+          }
+          .about_deco{
+              width: 72px;
+          }
+      }
+      p.intro{
+          font-family: 'Poppins', sans-serif;
+          font-size: 16px;
+          color: $color_main_m;
+          margin-bottom: 24px;
+      }
+      ul.detail{
+          li.all{
+              width: 33.3%;
+              .title{
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 24px;
+                  padding: 4px;
+                  &::after{
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      bottom: 0;
+                      width: 80%;
+                      height: 4px;
+                      background-color: $color_sub;
+                  }
+              }
+              ul{
+                  li{
+                      margin-bottom: 12px;
+                      
+                      .year{
+                          position: relative;
+                          font-family: 'Poppins', sans-serif;
+                          font-weight: 300;
+                          letter-spacing: 2px;
+                          font-size: 12px;
+                          margin-bottom: 4px;
+                          padding-left: 12px;
+                          &::before{
+                              content: "";
+                              position: absolute;
+                              left: -2px;
+                              top: 6px;
+                              width: 4px;
+                              height: 4px;
+                              border-radius: 100%;
+                              background-color: $color_main_l;
+                          }
+                      }
+                      .con{
+                          font-weight: 600;
+                          border-left: 1px solid $color_main_l;
+                          padding-left: 12px;
+                      }
+                      .con_main{
+                          font-weight: 400;
+                          border-left: 1px solid $color_main_l;
+                          padding-left: 12px;
+                          padding-bottom: 6px;
+                      }
+                      .skill{
+                          font-family: 'Poppins', sans-serif;
+                          line-height: 28px;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+section.work{
+  padding: 80px 0px 100px 0px;
+  position: relative;
+  &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 338px;
+      bottom: -338px;
+      background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/about_bg_deco2.png?raw=true);
+      background-size: cover;
+      z-index: 1;
+      background-position: center center;
+  }
+  .container{
+      .title{
+          border-bottom: 1px solid $color_main_nav;
+          margin-top: 100px;
+          margin-bottom: 48px;
+          padding-bottom: 20px;
+          align-items: flex-end;
+          justify-content: space-between;
+          .work_title{
+              position: relative;
+              font-size: 90px;
+              align-items: center;
+              h2{
+                  font-family: 'Poppins', sans-serif;
+                  font-weight: 600;
+                  color: $color_sub;
+              }
+              .work_deco{
+                  width: 72px;
+                  margin-right: 8px;
+              }
+          }
+          .subtitle{
+              h5{
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 24px;
+              }
+              p{
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 14px;
+                  font-weight: 300;
+              }
+          }
+      }
+      ul{
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 52px 24px;
+          box-sizing: border-box;
+          li.work_item{
+              position: relative;
+              box-sizing: border-box;
+              max-width: calc((100% - 48px) / 3);
+              flex-direction: column;
+              align-items: center;
+              background-color: $color_main_s;
+              border-radius: 15px;
+              transition: .5s;
+              &:hover{
+                  background-color: $color_sub;
+                  .num{
+                      color: $color_main_l;
+                      bottom: -12px;
+                  }
+                  .work_pic{
+                      overflow: hidden;
+                      img{
+                          transform: scale(1.1);
+                      }
+                      
+                  }
+              }
+              .work_pic{
+                  width: 88%;
+                  overflow: hidden;
+                  position: relative;
+                  top: -16px;
+                  border-bottom: 10px solid white;
+                  img{
+                      transition: .5s;
+                  }
+              }
+              .content{
+                  padding: 0px 10px 16px 10px;
+                  text-align: center;
+                  h5{
+                      font-weight: 300;
+                      font-family: 'Poppins', sans-serif;
+                  }
+                  h3{
+                      margin-bottom: 8px;
+                      font-family: 'Poppins', sans-serif;
+                  }
+                  .more_btn{
+                      a{
+                          font-family: 'Poppins', sans-serif;
+                          display: inline-block;
+                          color: $color_main_m;
+                          font-size: 14px;
+                          line-height: 16px;
+                          padding: 2px 8px;
+                          box-sizing: border-box;
+                          text-decoration: none;
+                          transition: .5s;
+                          font-weight: 300;
+                          span{
+                              margin-left: 0px;
+                              transition: .5s;
+                          }
+                          &:hover{
+                              color: $color_main_l;
+                              span{
+                                  margin-left: 10px;
+                              }
+                          }
+                      }    
+                  }
+              }
+              
+              .num{
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 36px;
+                  font-weight: 500;
+                  position: absolute;
+                  left: 16px;
+                  bottom: -26px;
+                  color: $color_main_m;
+                  transition: .5s;
+              }
+          }
+          li.work_item_half{
+              max-width: calc((100% - 24px) / 2);
+              .work_pic{
+                  width: 92%;
+              }
+          }
+          li.work_item_four{
+              max-width: calc((100% - 72px) / 4);
+              .work_pic{
+                  width: 90%;
+              }
+          }
+          
+      }
+      
+  }
+}
+section.contact{
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0px 0px 0px;
+  background-color: $color_main_s;
+  .hand{
+      position: relative;
+      max-width: 75%;
+      bottom: -15px;
+      a{
+          position: relative;
+          display: inline-block;
+          z-index: 2;
+          img{
+              margin-left: 0;
+          }
+          &, & img{
+              transition: .5s;
+          }
+      }
+      .deco{
+          z-index: 1;
+          position: absolute;
+          bottom: -65%;
+          right: -10%;
+          max-width: 65%;
+          transition: .5s;
+      }
+      &:hover{
+          a{
+              transform: rotate(-5deg);
+              img{
+                  margin-left: -5%;
+              }
+          }
+          .deco{
+              transform: rotate(10deg);
+              right: -20%;
+          }
+      }
+  }
+}
+@media screen and (max-width: 1023px){
+  section.kv{
+      h1{
+          font-size: 132px;
+      }
+      h5{
+          font-size: 30px;
+          letter-spacing: 14px;
+      }
+  }
+  section.about{
+      .person{
+          right: 48px;
+          width: 28%;
+      }
+  }
+  section.work{
+      padding: 80px 0px 60px 0px;
+      &::after{
+          height: 169px;
+          bottom: -168px;
+      }
+      .container{
+          ul{
+              li.work_item{
+                  max-width: calc((100% - 24px) / 2);
+              }
+              li.work_item_half{
+                  max-width: 100%;
+              }
+              li.work_item_four{
+                  max-width: calc((100% - 24px) / 2);
+              }
+          }
+      }
+  }
+  section.contact{
+      .deco{
+          right: 16%;
+      }
+  }
+}
+@media screen and (max-width: 900px) {
+  section.kv{
+      h1{
+          font-size: 116px;
+      }
+      h5{
+          font-size: 24px;
+          letter-spacing: 12px;
+      }
+  }
+  section.work{
+      padding: 28px 0px 40px 0px;
+      &::after{
+          height: 169px;
+          bottom: -168px;
+      }
+  }
+}
+@media screen and (max-width: 767px){
+  section.kv{
+      padding: 236px 0px 0px 0px;
+      .container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      h1{
+          font-size: 60px;
+          margin-top: 96px;
+          margin-bottom: 12px;
+      }
+      h5{
+          left: auto;
+          font-size: 20px;
+          letter-spacing: 2px;
+          margin-bottom: 236px;
+      }
+      .kv_deco{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .text{
+          font-weight: 200;
+          font-size: 12px;
+          letter-spacing: 5px;
+          z-index: 1;
+          padding-left: 4px;
+      }
+      .text1{
+          margin-bottom: 72px;
+      }
+      .text2{
+          padding-bottom: 36px;
+      }
+      .deco_block{
+          width: 14px;
+          height: 90px;
+      }
+      .deco_line{
+          bottom: 60px;
+          left: 50%;
+          height: 60px;
+      }
+  }
+  section.about{
+      padding: 48px 0px 30px 0px;
+      .content{
+          max-width: 85%;
+          padding: 40px 28px;
+          .title{
+              font-size: 54px;
+              margin: 0px auto 12px auto;
+              .about_deco{
+                  width: 54px;
+              }
+          }
+          ul.detail{
+              flex-wrap: wrap;
+              li.all{
+                  width: 100%;
+              }
+          }
+      }
+  }
+  section.work{
+      padding: 28px 0px 40px 0px;
+      &::after{
+          height: 169px;
+          bottom: -168px;
+      }
+      .container{
+          .title{
+              flex-wrap: wrap;
+              margin-bottom: 48px;
+              padding-bottom: 20px;
+              .work_title{
+                  order: 0;
+                  font-size: 54px;
+                  .work_deco{
+                      order: 1;
+                      width: 54px;
+                  }
+              }
+              .subtitle{
+                  order: 1;
+              }
+          }
+          ul{
+              justify-content: center;
+              flex-wrap: wrap;
+              li.work_item{
+                  max-width: 100%;
+                  flex-direction: column;
+                  align-items: center;
+                  .work_pic{
+                      width: 92%;
+                  }
+              }
+              li.work_item_half{
+                  max-width: 100%;
+                  .work_pic{
+                      width: 92%;
+                  }
+              }
+              li.work_item_four{
+                  max-width: 100%;
+                  .work_pic{
+                      width: 92%;
+                  }
+              }
+          }
+      }
+  }
+  section.contact{
+      .container{
+          padding: 0px;
+      }
+      .hand{
+          max-width: initial;
+          left: -113px;
+          bottom: 0;
+          width: 465px;
+          .deco{
+              bottom: -60%;
+          }
+      }
+      
+  }
+}

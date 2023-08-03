@@ -1,0 +1,145 @@
+@import './variable';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/works.scss';
+
+
+
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img{
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* 全域 border box */
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+*{
+    // outline: 1px solid skyblue;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+  }
+html, body{
+    position: relative;
+}
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0px 60px;
+    z-index: 1;
+}
+.flex{
+    display: flex;
+}
+.PC_only{
+    display: block;
+}
+.SM_only{
+    display: none;
+}
+
+
+@media screen and (max-width: 1023px){
+    .PC_only{
+        display: block;
+    }
+    .SM_only{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .PC_only{
+        display: none;
+    }
+    .SM_only{
+        display: block;
+    }
+}
+@media screen and (max-width: 767px){
+    .PC_only{
+        display: none;
+    }
+    .SM_only{
+        display: block;
+    }
+    .container{
+        padding: 0px 30px;
+    }
+}
+
+
+@keyframes arrow{
+    0%{background-position: 0% 100%;}
+   44%{background-position: 0 0;}
+   90%{background-position: 0% -100%;}
+  100%{background-position: 0% -100%;}
+} 
+@keyframes arrow_reverse{
+    0%{background-position: 0% -100%;}
+   37%{background-position: 0 -100%;}
+   50%{background-position: 0 0;}
+   85%{background-position: 0 0;}
+  100%{background-position: 0% 100%;}
+}

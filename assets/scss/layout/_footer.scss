@@ -1,0 +1,12 @@
+.footer{
+    position: relative;
+    z-index: 1000;
+    background-color: $color_main_l;
+    padding: 10px 0px;
+    p{
+        color: $color_main_nav;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        text-align: center; 
+    }
+}
