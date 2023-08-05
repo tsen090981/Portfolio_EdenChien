@@ -62,7 +62,7 @@ section.kv{
 }
 section.about{
   position: relative;
-  padding: 100px 0px 55px 0px;
+  padding: 120px 0px 55px 0px;
   background-color: $color_main_s;
   &::after{
       position: absolute;
@@ -78,14 +78,14 @@ section.about{
   .person{
       position: absolute;
       right: 20px;
-      top: 20px;
+      top: 50px;
       width: 25%;
       z-index: 10;
   }
   .content{
       position: relative;
       max-width: 75%;
-      padding: 40px 48px;
+      padding: 50px 48px;
       background-image: url(https://github.com/tsen090981/personalWebSite_EdenChien/blob/main/images/about_bg.png?raw=true);
       background-size: cover;
       
@@ -93,7 +93,7 @@ section.about{
           position: relative;
           font-size: 90px;
           align-items: center;
-          margin: 0px auto 24px auto;
+          margin: 0px auto 16px auto;
           h2{
               margin-right: 8px;
               font-family: 'Poppins', sans-serif;
@@ -105,12 +105,15 @@ section.about{
           }
       }
       p.intro{
-          font-family: 'Poppins', sans-serif;
-          font-size: 16px;
-          color: $color_main_m;
-          margin-bottom: 24px;
+        position: relative;
+        left: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: $color_main_m;
+        margin-bottom: 16px;
       }
       ul.detail{
+        margin-top: 48px;
           li.all{
               width: 33.3%;
               .title{
@@ -130,7 +133,6 @@ section.about{
               ul{
                   li{
                       margin-bottom: 12px;
-                      
                       .year{
                           position: relative;
                           font-family: 'Poppins', sans-serif;
